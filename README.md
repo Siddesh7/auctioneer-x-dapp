@@ -1,6 +1,10 @@
 ## AuctioneerX 
 AuctioneerX is a Duction Auction Dapp that uses Superfluid Money streams for Bidding and highest bidder wins the asset under  auction, Interactions can be done via the frontend and/or via any Frame Client (Compatible with Open Frame Standard)
 
+### Features
+- Compatible with Open Frames Spec
+- Uses Polygon Mumbai Network (later moving this to Base Mainnet)
+- Share your Auction https://auctioneer-x-dapp.vercel.app/marketplace/{AUCTION_ADDRESS}
 
 - Users can create an auction from the frontend, and share the  link in any  Frames client.
 - Tada! anyone can bid directly from the Frames Client.
