@@ -100,7 +100,13 @@ export async function GET(req: NextRequest) {
           >
             Start a mumbai fDAIx Stream to bid. max bidder wins!
           </p>
-          <p>Total Stream Bidders: {data.streams.length}</p>
+          <p
+            style={{
+              fontSize: "30px",
+            }}
+          >
+            Total Stream Bidders: {data.streams.length}
+          </p>
         </div>
       </div>
     ),
