@@ -6,6 +6,8 @@ AuctioneerX is a Duction Auction Dapp that uses Superfluid Money streams for Bid
 - Uses Polygon Mumbai Network (later moving this to Base Mainnet)
 - Share your Auction https://auctioneer-x-dapp.vercel.app/marketplace/{AUCTION_ADDRESS}
 
+
+### Usage
 - Users can create an auction from the frontend, and share the  link in any  Frames client.
 - Tada! anyone can bid directly from the Frames Client.
 - Auction  can be settled by the created, highest streamoor will be  automatically picked.
