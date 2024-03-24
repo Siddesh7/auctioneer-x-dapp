@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
   const endpoint = "https://polygon-mumbai.subgraph.x.superfluid.dev/";
   const query = gql`
     query incomingStreamsQuery {
-      streams(where: {receiver: "0x262F026D3d2a2Bb19E787Fc7669E86555A5a3AAE"}) {
+      streams(where: {receiver: "${auction?.toLowerCase()}"}) {
         sender {
           id
           createdAtTimestamp

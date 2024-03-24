@@ -18,13 +18,28 @@ const AuctionCard = ({address}: {address: `0x${string}`}) => {
   const bid = async () => {
     console.log("streamBid", streamBid);
   };
+
+  console.log(
+    "address",
+    `
+      query incomingStreamsQuery {
+          streams(where: {receiver: "${address}"}) {
+          sender {
+            id
+            createdAtTimestamp
+          }
+          streamPeriods {
+            flowRate
+          }
+        }
+      }
+    `
+  );
   const fetchGraphQLData = async () => {
     const endpoint = "https://polygon-mumbai.subgraph.x.superfluid.dev/";
     const query = gql`
       query incomingStreamsQuery {
-        streams(
-          where: {receiver: "0x262F026D3d2a2Bb19E787Fc7669E86555A5a3AAE"}
-        ) {
+          streams(where: {receiver: "${address.toLowerCase()}"}) {
           sender {
             id
             createdAtTimestamp
