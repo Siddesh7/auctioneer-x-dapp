@@ -24,7 +24,7 @@ export async function generateMetadata({
       "fc:frame:input:text": "FlowRate/day in fDAIx, 100",
       "fc:frame:button:1": "Stream Bid",
       "fc:frame:button:1:action": "tx",
-      "fc:frame:button:1:target": "",
+      "fc:frame:button:1:target": `https://auctioner-x.vercel.app/api/bid/${params.address}`,
       of: "vNext",
       "of:image": imageUrl,
       "of:post_url": postUrl,
