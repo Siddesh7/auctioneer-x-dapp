@@ -14,6 +14,10 @@ AuctioneerX is a Duction Auction Dapp that uses Superfluid Money streams for Bid
 - Assets are transferred across the parties.
 - Creator makes the total stream profit
 
+### Protocols Used
+- Superfluid Money Streams
+- The Graph Network to query Money Streams.
+
 Contracts are deployed in Polygon Mumbai.
 
 -> Note: Warpcast doesn't support Mumbai  Network for  Transaction Frames, So please  use [PrivyChat](https://privychat.xyz) to test it out.
